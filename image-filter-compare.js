@@ -1,3 +1,25 @@
+// Making the Toggle Buttons
+document.querySelectorAll('.filter-panel').forEach((filterPanel) => {
+    let isActive = false;
+    let filterBtn = filterPanel.querySelector('.filter-btn');
+    let filterSlider = filterPanel.querySelector('.filter-slider');
+    filterBtn.addEventListener('click', (e) => {
+        if(isActive == false){
+            filterSlider.style.visibility='visible';
+        filterBtn.classList.add('active');
+        isActive = true;
+        }
+        else{
+            filterSlider.style.visibility='hidden';
+        filterBtn.classList.remove('active');
+        isActive =false;
+        }
+        
+    });
+});
+
+
+
 document.querySelectorAll('.comp-slider').forEach((slider) => {
     let container = slider.closest('.img-compare-container');
     let beforeImg = container.querySelector('.img-compare-before');

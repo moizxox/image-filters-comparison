@@ -149,18 +149,23 @@ input[type="range"].comp-slider {
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s, color 0.5s;
   background-color: rgb(162, 0, 0);
 }
 .filter-panels .filter-panel .filter-btn:hover,
 .filter-panels .filter-panel .filter-btn.active {
   background-color: rgb(80, 133, 0);
+  transition: background-color .5s,color .5s;
   color: white;
+}
+.filter-panels .filter-panel .filter-btn.active:hover{
+    background-color: rgb(162, 0, 0);
+    color:black;
 }
 .filter-panels .filter-panel .filter-slider {
   cursor: pointer;
-  transition: display 0.3s;
-  display: none;
+  transition: visibility 0.1s;
+  visibility: hidden;
   height: 8px;
   appearance: none; /* Remove default styling */
   background: rgb(163, 255, 26); /* Default track color */
