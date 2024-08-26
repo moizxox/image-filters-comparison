@@ -1,4 +1,4 @@
-document.querySelectorAll('.slider').forEach((slider) => {
+document.querySelectorAll('.comp-slider').forEach((slider) => {
     let container = slider.closest('.img-compare-container');
     let beforeImg = container.querySelector('.img-compare-before');
     let sliderLine = container.querySelector('.slider-line');

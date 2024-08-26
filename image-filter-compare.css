@@ -9,7 +9,7 @@ background: linear-gradient(90deg, rgba(197,193,255,1) 0%, rgba(208,248,255,1) 4
 .heading{
    display: flex;
    justify-content: center;
-   padding: 30px;
+   margin-top: 10px;
 }
 .heading span{
     font-size: 28px;
@@ -79,7 +79,7 @@ background: linear-gradient(90deg, rgba(197,193,255,1) 0%, rgba(208,248,255,1) 4
     z-index: 3;
 }
 
-input[type="range"] {
+input[type="range"].comp-slider {
     position: absolute;
     inset: 0;
     opacity: 0;
@@ -115,6 +115,59 @@ input[type="range"] {
     top: 20px;
     right: 20px;
 }
+/* CSS for Filter Buttons */
+.filter-panels{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.475);
+}
+.filter-panels .filter-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: 15%;
+}
+.filter-panels .filter-panel .filter-btn{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: -4px 4px 0px 0px black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+    background-color: rgb(162, 0, 0);
+}
+.filter-panels .filter-panel .filter-btn:hover,.filter-panels .filter-panel .filter-btn.active{
+    background-color: rgb(80, 133, 0);
+    color: white;
+}
+.filter-panels .filter-panel .filter-slider{
+    cursor: pointer;
+    transition: display .3s ;
+    display: none;
+    height: 8px;
+    appearance: none; /* Remove default styling */
+    background: rgb(163, 255, 26); /* Default track color */
+    outline: none; /* Remove outline */
+    border-radius: 8px; /* Rounded corners */
+}
+input[type="range"]::-webkit-slider-thumb {
+    
+    appearance: none;
+    width: 15px; /* Width of the thumb (dot) */
+    height: 15px; /* Height of the thumb (dot) */
+    background: #ffffff; /* Thumb (dot) color */
+    border-radius: 16px;
+
+}
+/* For Social Links CSS */
 .social{
     width: 300px;
     height: 60px;
