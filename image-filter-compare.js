@@ -36,7 +36,6 @@ brSlider.addEventListener("input", applyFilters);
 clrSlider.addEventListener("input", applyFilters);
 ctrSlider.addEventListener("input", applyFilters);
 
-
 // let brSlider = document.querySelector(".br-slider");
 // let clrSlider = document.querySelector(".clr-slider");
 // let ctrSlider = document.querySelector(".ctr-slider");
